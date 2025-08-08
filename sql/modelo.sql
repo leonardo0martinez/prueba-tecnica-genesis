@@ -1,5 +1,5 @@
-create database prueba;
-use prueba;
+create database PruebaTecnica;
+use PruebaTecnica;
 
 
 -- Eliminar le modelo
