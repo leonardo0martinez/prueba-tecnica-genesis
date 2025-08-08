@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "6387441a-fbfb-4ebc-8a0d-5b9f80f55d99",
+		"name": "PRUEBA-TECNICA-GENESIS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40469552"
+	},
+	"item": [
+		{
+			"name": "cuenta",
+			"item": [
+				{
+					"name": "Editar",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdWVudGEiOnsiY3VlbnRhX2lkIjoxLCJub21icmVzIjoiTGVvbmFyZG8iLCJhcGVsbGlkb3MiOiJNYXJ0aW5lcyIsInVzdWFyaW8iOiJsZW8ifSwiZXhwIjoxNzU0Njg4MDE0NzM5LCJpYXQiOjE3NTQ2NzM2MTR9.Yi6p5KHcKHbTSbpKrfWWP65bVD8UoKEH4dxsWv5VVms",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombres\": \"leo2\", \r\n    \"apellidos\": \"leo2\", \r\n    \"dpi\":\"0123456789022\", \r\n    \"telefono\": \"38129811\", \r\n    \"usuario\": \"leo2\", \r\n    \"pwd\": \"leo2\",\r\n    \"cuenta_id\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/cuenta/editar",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"cuenta",
+								"editar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "info",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "tarjeta",
+			"item": []
+		},
+		{
+			"name": "movimiento",
+			"item": []
+		},
+		{
+			"name": "transaccion",
+			"item": []
+		},
+		{
+			"name": "usuario",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"usuario\": \"leo\",\r\n    \"pwd\": \"leo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/usuario/login",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"usuario",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Registrar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombres\": \"leo2\", \r\n    \"apellidos\": \"leo2\", \r\n    \"dpi\":\"0123456789022\", \r\n    \"telefono\": \"38129811\", \r\n    \"usuario\": \"leo2\", \r\n    \"pwd\": \"leo2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/usuario/registrar",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"usuario",
+								"registrar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
