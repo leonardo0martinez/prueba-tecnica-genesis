@@ -2,7 +2,7 @@ Prueba Técnica - Leonardo Roney Martínez Maldonado
 
 ## Otros Archivos
 - [Demo Demostración 📽️](https://github.com/leonardo0martinez/prueba-tecnica-genesis/tree/main/grabación.webm)
-- [JSON Postman 📽️](https://github.com/leonardo0martinez/prueba-tecnica-genesis/tree/main/PRUEBA-TECNICA-GENESIS.postman_collection.json)
+- [JSON Postman 📂](https://github.com/leonardo0martinez/prueba-tecnica-genesis/tree/main/PRUEBA-TECNICA-GENESIS.postman_collection.json)
 
 ## Configuración del Entorno
 Para esta pruba técnica se realizó una modelo sencillo de cliente servidor, en el que se cuenta con una base de datos en MySQL, un servidor en Nodejs y un cliente con React JS. Con la finalidad de realizar un sistema de tarjetas, movimientos y perfiles de usuario.
