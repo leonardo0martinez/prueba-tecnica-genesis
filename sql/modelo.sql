@@ -57,3 +57,12 @@ create table movimiento(
     foreign key (tarjeta_id_origen) references tarjeta(tarjeta_id),
     foreign key (tarjeta_id_destino) references tarjeta(tarjeta_id)
 );
+
+
+-- Información de Relleno
+INSERT INTO tarjeta (numero, cvc, nombre_titular, mes_vencimiento, anio_vencimiento, cuenta_id)
+VALUES
+('4539876543210123', 123, 'Leonardo Martínez', 12, 2026, 1),
+('4716123456789012', 456, 'Ana López', 6, 2025, 1),
+('5429876543210987', 789, 'Carlos Pérez', 9, 2027, 2),
+('6011123456789010', 321, 'María Gómez', 11, 2024, 2);

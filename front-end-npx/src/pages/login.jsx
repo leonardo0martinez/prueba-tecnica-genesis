@@ -63,9 +63,9 @@ export function Login() {
                 <Divider style={{ marginBlock: 20 }} />
                 <Title level={4}>Iniciar Sesión</Title>
                 <small style={{ marginBlock: 20 }}>Prueba Técnica | Leonardo Martinez</small>
-                <div>
+                {/* <div>
                     <img src={IMGS.LOGO} alt={'logo-login'} width={'250px'} color='red'></img>
-                </div>
+                </div> */}
                 {/* CORREO ELECTRÓNICO */}
                 <Form.Item name={'usuario'} rules={noNull}>
                     <Input

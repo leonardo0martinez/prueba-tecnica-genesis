@@ -6,6 +6,7 @@ import { verificarToken } from './middlewares/verificar-token.js'
 // Routers 
 import { routerUsuario } from './routes/usuario/router.js';
 import { routerCuenta } from './routes/cuenta/router.js';
+import { routerTarjeta } from './routes/tarjeta/router.js';
 import { SERVER_PORT } from "./config/env.js"
 
 
@@ -19,6 +20,7 @@ app.use('/usuario', routerUsuario);
 // Enlaces privados
 app.use(verificarToken);
 app.use('/cuenta', routerCuenta);
+app.use('/tarjeta', routerTarjeta);
 // Ejecutar el servidor
 app.listen(SERVER_PORT, () => {
     console.log("Server corriendo 🏃", SERVER_PORT)

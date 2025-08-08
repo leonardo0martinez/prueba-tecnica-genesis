@@ -56,6 +56,10 @@ export function FormCuenta({ cuenta, editable = true, nuevo=false }) {
 
         // Realizar peticion para registrar
         const url = cuenta?.cuenta_id ? SERVER + 'cuenta/editar' : SERVER + 'usuario/registrar'
+        if(cuenta?.cuenta_id){
+            data.cuenta_id = cuenta?.cuenta_id
+        }
+
         await axios
             .post(url, data, nuevo ? {} : {
                 headers: {
@@ -67,7 +71,6 @@ export function FormCuenta({ cuenta, editable = true, nuevo=false }) {
                 const { resultado, mensaje } = data
                 if (resultado) {
                     alertar('success', mensaje, api)
-                    limpiarForm()
                 } else {
                     alertar('error', mensaje, api)
                 }

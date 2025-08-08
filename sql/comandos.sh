@@ -1,0 +1,1 @@
+docker run --name prueba-tecnica -p 3306:3306 -e MYSQL_ROOT_PASSWORD=prueba-123 -d mysql
